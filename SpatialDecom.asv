@@ -1,0 +1,30 @@
+%
+%>>>>>>>>>>>>>>>>>>>>>SPATIAL DECOMPOSITION<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+%
+% INPUTS : Image , levels
+% Output : Laplacian pyramid of the Image
+%
+%>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+%
+clc;
+clear;
+close all;
+%>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+% load image
+img = imread('dogs.jpg');
+
+figure
+imshow(img)
+title('dogs');
+
+%>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+% smooth the image
+[h0,img_filtered] = laplaceDecomp(img,2);
+
+figure
+imshow(img_filtered)
+title('dogs');
+
+figure
+imshow(h0)
+title('dogs');
