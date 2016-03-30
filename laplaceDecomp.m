@@ -5,7 +5,7 @@
 % laplacian = input - img_smooth
 % subsampled_image = resize(img_smooth,0.5)
 %
-function [h,img_subsam] = laplaceDecomp(img,sigma )
+function [h,img_subsam] = laplaceDecomp(img,sigma)
 
     img_smooth = imgaussfilt(img,sigma);
     h = img - img_smooth;    
