@@ -4,6 +4,7 @@
 % INPUTS : Image , levels
 % Output : Laplacian pyramid of the Image
 %
+%
 %>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 %>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function [pyd] = SpatialDecom(img,levels)
